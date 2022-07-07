@@ -1,7 +1,4 @@
 function setAlarm(employed, vacation) {
-  if (employed === vacation) {
-    return false;
-  } else if (employed === !vacation) {
-    return employed;
-  }
+  employed === vacation && false;
+  employed === !vacation && employed;
 }
