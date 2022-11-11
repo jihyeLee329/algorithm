@@ -1,11 +1,6 @@
 function disemvowel(str) {
-  let regEx = /[aeiou]/i
-  let arr = [];
-  str.split('').map(d=>{
-    !regEx.test(d) && arr.push(d)
-  })
-  console.log(arr.join(''))
-  // return str;
+  //전체 모든 문자열 변경을 원할 경우 플래그 g 설정 .
+  return str.replaceAll(/[aeiou]/ig, "");
 }
 
 disemvowel("This website is for losers LOL!");
